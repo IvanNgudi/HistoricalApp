@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Historical</string>
+    <string name="btn_profile">btn_profile</string>
+    <string name="title">title</string>
+    <string name="buildings_name">buildings_name</string>
+    <string name="location">location</string>
+    <string name="historical">Historical</string>
+    <string name="building">Building</string>
+    <string name="android_development">Android Development</string>
+    <string name="address">Address</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="_62_81328417341">(+62) 81328417341</string>
+    <string name="interest">Interest</string>
+    <string name="ivanngudi16_gmail_com">ivanngudi16@gmail.com</string>
+    <string name="magelang_central_java_id">Magelang, Central Java, ID</string>
+    <string name="name">Name</string>
+    <string name="ivan_ngudi_rahayu">Ivan Ngudi Rahayu</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="img_profile">img_profile</string>
+    <string name="bg">bg</string>
+    <string name="profile_phone">profile_phone</string>
+    <string name="profile_name">profile_name</string>
+    <string name="profile_email">profile_email</string>
+    <string name="profile_interest">profile_interest</string>
+    <string name="profile_address">profile_address</string>
+</resources>

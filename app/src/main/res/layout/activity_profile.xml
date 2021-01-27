@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_profile"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:contentDescription="@string/bg"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/img_profile"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profiles"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/bg_name_profile"
+        android:fontFamily="@font/medium"
+        android:gravity="center"
+        android:text="@string/ivan_ngudi_rahayu"
+        android:textColor="#ffff"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/developer_info"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/iv_name"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:contentDescription="@string/profile_name"
+                android:src="@drawable/ic_man" />
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_name"
+                android:fontFamily="@font/bold"
+                android:text="@string/name"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_profile_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_name"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/ivan_ngudi_rahayu"
+                android:textColor="#2C4E66"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:contentDescription="@string/profile_phone"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                android:id="@+id/tv_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_phone"
+                android:fontFamily="@font/bold"
+                android:text="@string/phone"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_profile_phone"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_phone"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/_62_81328417341"
+                android:textColor="#2C4E66"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:contentDescription="@string/profile_email"
+                android:src="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/tv__profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_email"
+                android:fontFamily="@font/bold"
+                android:text="@string/email"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv__profile_email"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_email"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/ivanngudi16_gmail_com"
+                android:textColor="#2C4E66"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_interest"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:contentDescription="@string/profile_interest"
+                android:src="@drawable/ic_creativity" />
+
+            <TextView
+                android:id="@+id/tv_profile_interest"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_interest"
+                android:fontFamily="@font/bold"
+                android:text="@string/interest"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_profile_interest"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_interest"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/android_development"
+                android:textColor="#2C4E66"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:contentDescription="@string/profile_address"
+                android:src="@drawable/ic_address" />
+
+            <TextView
+                android:id="@+id/tv_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_address"
+                android:fontFamily="@font/bold"
+                android:text="@string/address"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_profile_address"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_address"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/magelang_central_java_id"
+                android:textColor="#2C4E66"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#B8687F</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/quicksand</item>
+    </style>
+
+    <style name="ProfileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#f5af19</item>
+        <item name="colorPrimaryDark">#f12711</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>
+
